@@ -1,0 +1,92 @@
+.filters{
+    max-width: 1200px;
+    width:100%;
+    padding-left: 20px;
+}
+
+::ng-deep{
+    .mat-form-field-infix{
+        background-color:364042;
+
+    .mat-form-field-label{
+        color: #e35335 !important;;
+    }    
+
+    }
+}
+
+.games{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.game{
+    width:280px;
+    margin:10px;
+    height:330px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url("../../../assets/images/background.jpg");
+    box-shadow: 5px 5px 5px 5px #364042;
+    transition-duration:0.3s;
+
+
+    &:hover{
+    box-shadow: 5px 5px 5px 5px #364100;
+    transform: translateY(-3px);
+    }
+
+    &-thumb-container{
+        background-image: url("../../../assets/images/background.jpg");
+        position: relative;
+        height: 172px;
+        color:white;
+        text-align: center;
+    }
+    &-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 172px;
+      }
+    
+      &-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 157px;
+      
+      }
+    
+      &-name {
+        color: #e35335;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    
+      &-platforms {
+        display: flex;
+      }
+    
+      &-platform {
+        width: 25px;
+        height:25px;
+       margin-right: 10px;
+       border-radius: 5px;
+       box-shadow: 3px 3px 3px 3px #364042;
+
+        
+      }
+     
+
+}
